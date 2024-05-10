@@ -1,5 +1,5 @@
 <div class="card w-1/2 mx-auto bg-base-100 p-5">
-  <h1 class="text-2xl mb-4">Add Task</h1>
+  <h1 class="text-2xl mb-4">Edit Task</h1>
   <form action="" method="post">
     <div class="mb-4">
       <label class="input input-bordered input-info flex items-center gap-2">
@@ -10,6 +10,7 @@
           name="title"
           class="grow"
           placeholder="Enter your task title"
+          value="<%=task.title%>"
         />
       </label>
     </div>
@@ -22,9 +23,10 @@
           name="description"
           class="grow"
           placeholder="Enter your task description"
+          value="<%=task.description%>"
         />
       </label>
     </div>
-    <button class="btn btn-neutral">Add</button>
+    <button class="btn btn-neutral">Update</button>
   </form>
 </div>

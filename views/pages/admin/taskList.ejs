@@ -1,0 +1,9 @@
+<div>
+  <h1 class="text-2xl mb-5 flex justify-between items-center">
+    All Tasks
+    <!-- <a href="/task/add" class="btn btn-neutral">Add New Task</a> -->
+  </h1>
+  <div class="grid grid-cols-3 gap-3">
+    <% tasks.forEach((task)=>{ %> <%-include('../taskItem',{task}) %> <% }) %>
+  </div>
+</div>

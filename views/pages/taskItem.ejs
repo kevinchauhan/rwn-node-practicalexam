@@ -1,18 +1,22 @@
 <div class="card bg-base-100">
   <div class="card-body">
     <div class="text-end flex justify-between items-center">
-      <h2 class="card-title">Shoes!</h2>
+      <h2 class="card-title"><%=task.title %></h2>
       <div>
-        <a href="" class="mr-2 text-yellow-500">
+        <a href="/task/edit/<%=task._id %>" class="mr-2 text-yellow-500">
           <i class="fa-regular fa-pen-to-square"></i>
         </a>
-        <a href="">
+        <a href="/task/delete/<%=task._id %>">
           <i class="fa-solid fa-trash text-red-500"></i>
         </a>
       </div>
     </div>
 
-    <p>If a dog chews shoes whose shoes does he choose?</p>
-    <div class="card-actions justify-end"></div>
+    <p><%=task.description %></p>
+    <div class="card-actions justify-end">
+      <% if(task.userId.name){ %>
+      <h2 class="">username: (<%=task.userId.name%>)</h2>
+      <% } %>
+    </div>
   </div>
 </div>

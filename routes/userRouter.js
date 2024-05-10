@@ -11,4 +11,6 @@ userRouter.post('/register', userController.signup)
 userRouter.get('/login', userController.loginPage)
 userRouter.post('/login', userController.login)
 
+userRouter.get('/logout', userController.logout)
+
 export default userRouter
